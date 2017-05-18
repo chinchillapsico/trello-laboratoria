@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Task manager</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	</head>
+  <body>
+    <div class="container">
+     <div id="listContainer" >
+     </div>
+		<div class="span3 well">
+		</div>
+		<button id="new_list_button" type="button" class="btn btn-info" onclick="toggleDivs('new_list','new_list_button')">Añadir nueva lista</button>
+
+		<form style="display:none" onsubmit="return addList()" id="new_list">
+				<a class="close"" href="#" onclick="toggleDivs('new_list_button','new_list')">x</a>
+				<h2 class="list_head">Create New List</h2>
+				<input type="text" name="title" id="title" placeholder="List name"/>
+				<br />
+			 	<button type="submit" class="btn btn-info">Add List</button>
+		</form>
+   </div>
+	<script src="js/main.js"></script>
+	</body>
+</html>
